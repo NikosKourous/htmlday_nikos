@@ -1,0 +1,175 @@
+.undefined{
+    color:rgb(0, 0, 0);
+    margin-top:-140px;
+    margin-left:275px;
+    font-size: 30px;
+}
+
+.skills {
+    width: 800px;
+    height: 450px;
+    top: 100px;
+    left: 500px;
+    position: absolute;
+    opacity: 0.3;
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: -1;
+    filter: grayscale(100%);
+
+}
+
+.undefined_img {
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cloud-1 {
+    position: absolute;
+    left: 1400px;
+    image-rendering:pixelated;
+    image-rendering:optimizeSpeed;
+    image-rendering:-moz-crisp-edges;
+    opacity: 0.9;
+    bottom:500px;
+    right: 0;
+    width: 400px;
+    height: 150px;
+    background-image: url('clouds/cloud (1).jpg');
+    mix-blend-mode:color-burn; /* Change the blending mode here */
+
+    background-size: cover;
+}
+
+.cloud-2 {
+    position: absolute;
+    bottom: 360px;
+    image-rendering:pixelated;
+    image-rendering:optimizeSpeed;
+    opacity: 0.9;
+    image-rendering:-moz-crisp-edges;
+    right: 150px;
+    width: 380px;
+    height: 300;
+    z-index: -1;
+    background-image: url('clouds/cloud (2).jpg');
+    mix-blend-mode:color-burn; /* Change the blending mode here */
+    background-size: cover;
+}
+
+.cloud-3 {
+    position: absolute;
+    bottom: 600px;
+    right: 40px;
+    width: 200px;
+    height: 300px;
+    background-image: url('clouds/cloud (3).jpg');
+    background-size: cover;
+    image-rendering:pixelated;
+    mix-blend-mode:color-burn; /* Change the blending mode here */
+    z-index: 2  ;
+
+
+}
+
+.cloud-4 {
+    position: absolute;
+    bottom: 90px;
+    right: 300px;
+    width: 700px;
+    height: 347px;
+    background-image: url('clouds/cloud (4).jpg');
+    background-size: cover;
+    background-size: cover;
+    image-rendering:pixelated;
+    mix-blend-mode:color-dodge; /* Change the blending mode here */
+    z-index:2  ;
+}
+
+.cloud-5 {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    width: 304px;
+    height: 437px;
+    background-image: url('clouds/cloud (5).jpg');
+    background-size: cover;
+    image-rendering:pixelated;
+    mix-blend-mode:color-dodge; /* Change the blending mode here */
+    z-index:2;  
+}
+
+.cloud-6 {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    width: 610px;
+    height: 400px;
+    background-image: url('clouds/cloud (6).jpg');
+    background-size: cover;
+    image-rendering:pixelated;
+    mix-blend-mode:hue;
+    z-index:2;  
+}
+
+
+.brain{
+    position: absolute;
+    bottom: -100px;
+    right: -100pz;
+    width: 1200px;
+    height: 610px;
+    image-rendering:pixelated;
+    z-index:-1;  
+}
+
+.outside{
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    width: 1200px;
+    height: 610px;
+    image-rendering:pixelated;
+    mix-blend-mode:color-burn;
+    z-index:2;  
+}
+
+.wavelength{
+    position: absolute;
+    top:30px;
+    left:800px;
+    width: 1200px;
+    height: 610px;
+    z-index:1;  
+    opacity: 0.4;
+    mix-blend-mode: screen;
+    image-rendering:pixelated;
+    filter:contrast(100);
+    filter:saturate(100);
+    filter:brightness(5);
+
+
+}
+
+.typing-text {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 37px;
+    line-height: 0.9;
+    position: absolute;
+    left: 20px;
+    top: 1100px;
+    padding: 20px;
+    width: 1700px; /* Adjust width as needed */
+    height: 2000px;
+    overflow: auto;
+    mix-blend-mode:multiply;
+    opacity:0.9;
+  }

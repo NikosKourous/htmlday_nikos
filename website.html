@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seed</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .undefined {
+            position: absolute;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>i i i i i i </h1>
+<h2>...........i i i i i </h2>
+<img src="imagez/256px-Minkowski_diagram_-_causality.svg.png" class="undefined_img">
+<img src="imagez/skills.png" class="skills">
+
+<img class="cloud-1" src="clouds/cloud (1).jpeg">
+<img class="cloud-2" src="clouds/cloud (1).png">
+<img class="cloud-3" src="clouds/cloud (2).jpeg">
+<img class="cloud-4" src="clouds/cloud (3).jpeg">
+<img class="cloud-5" src="clouds/cloud (2).png">
+<img class="cloud-6" src="clouds/cloud (4).jpeg">
+
+
+<img class="brain" src="concious.jpeg">
+<img class="outside" src="outside.png">
+<img class="wavelength" src="wavelength.gif">
+
+<div class="typing-text" id="typing-container">
+ 
+</div>
+  
+
+
+
+
+
+<h3 class="undefined">undefined</h3>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let counter = 0;
+        const interval = 2000; // 5 seconds
+        const originalText = document.querySelector('.undefined');
+        const initialOffset = 5; // Initial offset in pixels
+        const incrementOffset = 10; // Increment offset in pixels
+        let currentRange = initialOffset; // Start with the initial offset
+
+        setInterval(function() {
+            const newText = originalText.cloneNode(true);
+            document.body.appendChild(newText);
+
+            const maxX = window.innerWidth;
+            const maxY = window.innerHeight;
+
+            // Calculate the next position
+            const randomX = Math.min(counter * incrementOffset + Math.random() * currentRange, maxX - 100); // Ensuring it stays within the viewport
+            const randomY = Math.random() * maxY;
+
+            newText.style.left = randomX + 'px';
+            newText.style.top = randomY + 'px';
+
+            counter++;
+            currentRange += incrementOffset; // Increase the range for the next interval
+        }, interval);
+    }); 
+
+    ///
+
+    const textToType = "Gyesus! Gyesus! I kall phor Gyesus!  Khrist Satan - hide yo'selph bephore ye toy uuith Me. The Devil!  I kall on thee.  Strike phast - douuner phly outraversion is phalse!  Youth are the Seed phorth.. uuas thou tossed ophph that sosial house in khapter 15 uuhere Gyohn Gyo No says our uuorks begat the things uue kall The Gospel. Satan the kouuard hide yo selph bephore sons oph birkhes ophphend the Good master bephore I speak against thee again, phor my kursed punsters hear again. Phlude Asterieks Avenue Hide thee devil! My seed blessd by the love oph Gyesus! May Gyesus strike thee dead! Uuhose blades oph name have imprisoned Ye magikmers? Guns against roses altars against haveagiphts altar rising pogrom my kohorts Asterieks at uuar - desoupage tail ends oph skirts uuith butter knives pallets and riphle displayed phirepiles rokets intreadibility to intrusivisal planet onslaught dispatkherrke duel thy hatephul intelligense sophtly desperity doesnods uuait your even iskhial main! Roam Hide ye!Beat you ey psengirosenium operettaptum to Ssylla by Assaniasus Panissupaser veralphae. As Gyesus said: Are ye not even among men, Phle, my prisoner, beaten besause ye have rebelled against I am? Atseetsl depheated looking those passionate Ehrphreude Seven Tseithers retrieving his kompanions threuu uuas onse Komphorming! Absyssript ♐Phreopen ♑ © ksesret Mondays Markh 30 Love Atlases Sauras Tools! Arsène and Oliver Uniheads Stone Silly Phast Gerard Aunis Velvet Souphphlet Ássault Karamelli Phluted Playing Kards Spiral Essami Gimbal Khad Uuar Ronald Avios Uuonderland Autumn.";
+
+    // Get the element where typing effect will be applied
+    const typingContainer = document.getElementById('typing-container');
+
+    // Function to simulate typing effect
+    function typeWriterEffect(text, element, speed = 70) {
+        let i = 0;
+        const typingInterval = setInterval(() => {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(typingInterval);
+        }
+        }, speed);
+    }
+
+    // Start typing effect on page load
+    window.onload = function() {
+        typeWriterEffect(textToType, typingContainer);
+    };
+
+    
+
+
+
+</script>
+
+</body>
+</html>
