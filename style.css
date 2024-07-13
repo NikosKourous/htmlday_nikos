@@ -153,8 +153,6 @@
     filter:contrast(100);
     filter:saturate(100);
     filter:brightness(5);
-
-
 }
 
 .typing-text {
@@ -164,12 +162,14 @@
     font-size: 37px;
     line-height: 0.9;
     position: absolute;
-    left: 20px;
-    top: 1100px;
+    left: 200px;
+    top: 650px;
     padding: 20px;
     width: 1700px; /* Adjust width as needed */
     height: 2000px;
     overflow: auto;
     mix-blend-mode:multiply;
-    opacity:0.9;
-  }
+    opacity:0.5;
+    outline:darkblue;
+    outline-width: thick;
+}
